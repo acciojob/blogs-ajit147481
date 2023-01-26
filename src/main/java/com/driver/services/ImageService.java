@@ -17,7 +17,7 @@ public class ImageService {
         //create an image based on given parameters and add it to the imageList of given blog
         Image image=new Image();
         image.setDimension(dimensions);
-        image.setDescriprion(description);
+        image.setDescription(description);
         image.setBlog(blog);
         imageRepository2.save(image);
         return image;
@@ -37,7 +37,7 @@ public class ImageService {
     public int countImagesInScreen(Image image, String screenDimensions) {
         //Find the number of images of given dimensions that can fit in a screen having `screenDimensions`
         //In case the image is null, return 0
-        String dimensions = image.getDimensions();
+        String dimensions = image.getDimension();
         int xi = 0;
         int yi = 0;
         int xs = 0;
