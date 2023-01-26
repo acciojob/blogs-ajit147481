@@ -30,8 +30,8 @@ public class User {
         this.firstName = firstName;
     }
 
-    public void setUserName(String userName) {
-        this.username = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public void setId(int id) {
@@ -42,7 +42,7 @@ public class User {
         this.blogList = blogList;
     }
 
-    public String getUserName() {
+    public String getUsername() {
         return username;
     }
 
