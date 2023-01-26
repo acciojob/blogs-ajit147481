@@ -18,14 +18,15 @@ public class ImageService {
         Image image=new Image();
         image.setDimension(dimensions);
         image.setDescriprion(description);
-        image.setBlog(blog)
+        image.setBlog(blog);
         imageRepository2.save(image);
         return image;
     }
 
     public void deleteImage(Image image){
-        int imageId= image.getId();
+        System.out.println(image.getId());
         imageRepository2.delete(image);
+        System.out.println(imageRepository2.findAll().size());
     }
 
     public Image findById(int id) {
